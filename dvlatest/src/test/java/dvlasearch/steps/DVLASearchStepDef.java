@@ -29,7 +29,7 @@ public class DVLASearchStepDef extends AbstractPage {
     private ConfirmVehiclePage confirmVehiclePage;
     private Path path = Paths.get(""); // Points to the root directory of the current project
     private  String testDir = path.toAbsolutePath().toString()+"/src/test/resources/files/";// a Directory contains various test files
-    private String filename = testDir+"VehicleDetails.csv";
+    private String filename = testDir+"VehicleDetails.csv";//making an assumption that this file contains the vehile registarion details
 
     @Given("^I am a web user$")
     public void iAmAWebUser()  {
@@ -41,7 +41,7 @@ public class DVLASearchStepDef extends AbstractPage {
     @When("^I navigate to dvla website$")
     public void iNavigateToDvlaWebsite()  {
         driver.get(dvlaUrl);
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();//maximising the window
 
     }
 
@@ -58,9 +58,10 @@ public class DVLASearchStepDef extends AbstractPage {
         while (input.hasNextLine()){
             list.add(input.nextLine());
         }
+        //loop to capture vehicle details in the file into the array
         for(int i=0;i<list.size();i++){
             String currentLine = list.get(i);
-            if(currentLine.contains("#"))
+            if(currentLine.contains("#"))//ignoring the first line in the file
                 continue;
             String [] currentLineValue = list.get(i).split(",");
             dvlaStartPage=createPage(DVLAStartPage.class);

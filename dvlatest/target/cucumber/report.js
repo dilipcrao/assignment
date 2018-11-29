@@ -38,28 +38,28 @@ formatter.match({
   "location": "DVLASearchStepDef.iAmAWebUser()"
 });
 formatter.result({
-  "duration": 4963584308,
+  "duration": 6384103310,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iNavigateToDvlaWebsite()"
 });
 formatter.result({
-  "duration": 3248747745,
+  "duration": 3197767294,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iProvideTheRegistrationNumberOfAVehicleFromACsvFile()"
 });
 formatter.result({
-  "duration": 13711460327,
+  "duration": 12105935098,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iShouldBeAbleToVerifyTheDetailsOfTheVehicleAsPresentInTheCsvFile()"
 });
 formatter.result({
-  "duration": 764059729,
+  "duration": 721202593,
   "status": "passed"
 });
 });
