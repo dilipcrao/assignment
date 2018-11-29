@@ -29,7 +29,7 @@ public class DVLASearchStepDef extends AbstractPage {
     private ConfirmVehiclePage confirmVehiclePage;
     private Path path = Paths.get(""); // Points to the root directory of the current project
     private  String testDir = path.toAbsolutePath().toString()+"/src/test/resources/files/";// a Directory contains various test files
-    private String filename = testDir+"VehicleDetails.csv";//making an assumption that this file contains the vehile registarion details
+    private String filename = testDir+"VehicleDetails.csv";//making an assumption that this file contains the vehicle registration details
 
     @Given("^I am a web user$")
     public void iAmAWebUser()  {
@@ -79,17 +79,14 @@ public class DVLASearchStepDef extends AbstractPage {
                 ae.printStackTrace();
             }
 
-            /*for(int j=0;j<currentLineValue.length;j++){
-                System.out.println("value of field "+(j+1)+" is >>>> "+currentLineValue[j]);
 
-            }*/
         }
 
     }
 
     @Then("^I should be able to verify the details of the vehicle as present in the csv file$")
     public void iShouldBeAbleToVerifyTheDetailsOfTheVehicleAsPresentInTheCsvFile() {
-        quitDriver();
+        quitDriver();//Closing the browser at the end of the test, verification is implemented in above step itself.
 
     }
 }

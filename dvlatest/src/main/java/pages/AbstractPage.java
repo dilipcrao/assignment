@@ -13,7 +13,7 @@ public abstract class AbstractPage {
 
     protected static final Logger log = LoggerFactory.getLogger(AbstractPage.class);
 
-    protected static final String dvlaUrl = "https://www.gov.uk/get-vehicle-information-from-dvla";
+    protected static final String dvlaUrl = "https://www.gov.uk/get-vehicle-information-from-dvla";//URL is defined as Final, as it might not change
 
     protected static WebDriver driver;
 
@@ -22,9 +22,9 @@ public abstract class AbstractPage {
     }
 
     protected static void setDriver(){
-        System.setProperty("webdriver.chrome.drive","/drivers/chrome/chromedriver.exe");
+        System.setProperty("webdriver.chrome.drive","/drivers/chrome/chromedriver.exe");//can be expanded to other browsers, but currently designed to work on chrome only
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); //implicit wait to take any issues while loading
 
     }
 
