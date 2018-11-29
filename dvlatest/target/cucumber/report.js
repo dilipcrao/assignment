@@ -1,16 +1,16 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/dvlasearch.feature");
 formatter.feature({
   "line": 1,
-  "name": "As a web user",
+  "name": "As a web user need to check vehicle details in dVLA site agnist the data in CSV file",
   "description": "",
-  "id": "as-a-web-user",
+  "id": "as-a-web-user-need-to-check-vehicle-details-in-dvla-site-agnist-the-data-in-csv-file",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
   "name": "Search the dvla website for reg numbers",
   "description": "",
-  "id": "as-a-web-user;search-the-dvla-website-for-reg-numbers",
+  "id": "as-a-web-user-need-to-check-vehicle-details-in-dvla-site-agnist-the-data-in-csv-file;search-the-dvla-website-for-reg-numbers",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -38,28 +38,28 @@ formatter.match({
   "location": "DVLASearchStepDef.iAmAWebUser()"
 });
 formatter.result({
-  "duration": 5144957266,
+  "duration": 5283889874,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iNavigateToDvlaWebsite()"
 });
 formatter.result({
-  "duration": 2686987300,
+  "duration": 2762795538,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iProvideTheRegistrationNumberOfAVehicleFromACsvFile()"
 });
 formatter.result({
-  "duration": 11330704694,
+  "duration": 12783455907,
   "status": "passed"
 });
 formatter.match({
   "location": "DVLASearchStepDef.iShouldBeAbleToVerifyTheDetailsOfTheVehicleAsPresentInTheCsvFile()"
 });
 formatter.result({
-  "duration": 692741985,
+  "duration": 743131618,
   "status": "passed"
 });
 });

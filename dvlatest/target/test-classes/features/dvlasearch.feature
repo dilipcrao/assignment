@@ -1,4 +1,4 @@
-Feature: As a web user
+Feature: As a web user need to check vehicle details in dVLA site agnist the data in CSV file
 
   Scenario: Search the dvla website for reg numbers
     Given I am a web user

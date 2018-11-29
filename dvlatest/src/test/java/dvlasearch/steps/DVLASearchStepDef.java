@@ -75,6 +75,7 @@ public class DVLASearchStepDef extends AbstractPage {
                 driver.get(dvlaUrl);
             }catch (AssertionError ae){
                 log.error("Assertion failed!");
+                Assert.fail();
                 quitDriver();
                 ae.printStackTrace();
             }
